@@ -2,7 +2,7 @@
 		<aside id="fh5co-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   	<li style="background-image: url(images/flashy_bg/images-12.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -23,8 +23,8 @@
 		<div id="fh5co-contact">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Contact us</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+					<h1>Get In Touch</h1>
+					<h4>Please fill out this form to contact us</h4>
 				</div>
 			</div>
 			<div class="row">
@@ -39,19 +39,25 @@
 				</div>
 				<div class="col-md-7 col-md-pull-2 animate-box">
 					<div class="row">
-						<div class="col-md-6">
+						<form action="/send" method="POST">
+													<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Name">
+								<input type="text" class="form-control" name="name" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email">
+								<input type="text" class="form-control" name="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" name="phone" placeholder="Phone Number">
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+								<textarea name="" class="form-control" id="" cols="30" rows="7" name="message" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12">
@@ -59,38 +65,17 @@
 								<input type="submit" value="Send Message" class="btn btn-primary btn-modify">
 							</div>
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="fh5co-counter" class="fh5co-counters fh5co-light-grey">
-			<div class="row">
+			{{!-- <div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center animate-box">
 					<p>We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 					</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="9452" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Members</span>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="214" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Ministries</span>
-						</div>
-						<div class="clearfix visible-sm-block visible-xs-block"></div>
-						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="433" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Classes</span>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="512" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Activities</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			</div> --}}
+
 		</div>
 	</div><!-- END container-wrap -->
