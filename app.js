@@ -28,9 +28,9 @@ app.get('/about', (req, res) => {
   res.render("about")
 })
 
-app.get('/sermons', (req, res) => {
-  res.render("sermons")
-});
+// app.get('/sermons', (req, res) => {
+//   res.render("sermons")
+// });
 
 app.get('/news', (req, res) => {
   res.render("news")
@@ -44,7 +44,7 @@ app.get('/contact', (req, res) => {
   res.render("contact")
 });
 
-app.post('send', (req, res) => {
+app.post('/send', (req, res) => {
   const output =`
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
